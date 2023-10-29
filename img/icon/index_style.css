@@ -1,0 +1,8 @@
+/* Your CSS file or within a <style> tag in your HTML file */
+.logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px; /* Adjust the value to control the roundness of the corners */
+}
