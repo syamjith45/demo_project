@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Profile</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #f6f6f7;
+      padding: 10px;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ba6a62;
+      color: black;
+    }
+    button{
+            background-color: darksalmon;
+            color: black;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 25px;
+        }
+        button :hover{
+            background-color: #ba6a62 ;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+   
+    <nav class="d-flex justify-content-between align-items-center">
+        <div>
+            <img src="logo.jpg" alt="Company Logo" class="company-logo">
+            <a href="">Address</a>
+            <a href="#">Bank Details</a>
+            <a href="#">Payment Details</a>
+            <a href="#">Order History</a>
+        </div>
+        <div>
+            <a href="#">Change Password</a>
+            <a href="#">Log In</a>
+            
+        </div>
+    </nav>
+    
+    <div class="container mt-7 py-3">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" style="width: 250px; height: 100px;">
+                    <img src="resize-169863643095887552pexelspixabay415829.jpg" alt="User Avatar" class="card-img-top round-image">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Name: John Doe</h5>
+                        <p class="card-text">Email: john@example.com</p>
+                        <p class="card-text">Username: JOHN</p>
+                        <p class="card-text">Phone Number: 8765432123</p>
+                        <button>Edit Profile</button> <!-- Fixed the closing tag here -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 py-5">
+                <!-- Account details card -->
+                <div class="card mb-4 py-3">
+                    <div class="card-header">Account Details</div>
+                    <div class="card-body">
+                        <form  class="account-details-form>
+                            <!-- Form Group (username) -->
+                            <div class="mb-3">
+                                <label class="small mb-1" for="inputUsername">Username (how your name will appear to other users on the site)</label>
+                                <input class="form-control" id="inputUsername" type="text" placeholder="Enter your username" value="username">
+                            </div>
+                            <!-- Form Group (first name and last name) -->
+                            <div class="row gx-3 mb-3">
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputFirstName">First name</label>
+                                    <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" value="Valerie">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputLastName">Last name</label>
+                                    <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" value="Luna">
+                                </div>
+                            </div>
+                            <!-- Form Group (email) -->
+                            <div class="mb-3">
+                                <label class="small mb-1" for="inputEmailAddress">Email address</label>
+                                <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" value="name@example.com">
+                            </div>
+                            <!-- Form Group (phone number) -->
+                            <div class="mb-3">
+                                <label class="small mb-1" for="inputPhone">Phone number</label>
+                                <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number" value="555-123-4567">
+                            </div>
+                            <button class="btn btn-primary" type="button">Save changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

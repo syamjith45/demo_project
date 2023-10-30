@@ -1,0 +1,8 @@
+.round-image {
+    border-radius: 50%;
+}
+  /* Add this CSS rule to set the background color for the form */
+.account-details-form {
+      padding: 20px; /* Add padding for spacing within the form */
+}
+
